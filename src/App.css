@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+    --main-color: #bde534;
+    --pane-padding: 5px 42px;
   }
+
+         /* navbar */
+.Navbar{
+    background-color: var(--main-color);
+    height: 60px;
+    line-height: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.shopping_total {
+    right: 112px;
+    color: white;
+    height: 23px;
+    position: absolute;
+    width: 23px;
+    top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 50%;
+}
+.online_shopping{
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Home component */
+.product{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.product>div{
+    cursor: pointer;
+}
+.product-discount{
+    color: #b3a2a2;
+}
+.product_image{
+    overflow: hidden;
+}
+.product_image img{
+    transition: all 0.5s linear;
+}
+.product_image img:hover{
+  transform: scale(1.2);
+}
+.linkText{
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Details */
+.product-count{
+    height: 40px;
+    line-height: 40px;
 }
+.product-count >:nth-child(1){
+    color: white;
+}
+.product-count :nth-child(1),
+.product-count :nth-child(3),
+.product-count :nth-child(4), 
+.delete{
+    cursor: pointer;
+}
+
+/* Shoping-Cart */
+.cart-image{
+    width: 150px;
+}
+
