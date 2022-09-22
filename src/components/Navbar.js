@@ -7,6 +7,7 @@ import { useSelector} from 'react-redux';
 
 function Navbar() {
   const {  TotalQuantity} = useSelector(state => state.CartReducer)
+  
 
     return (
         <div className="Navbar">
@@ -18,6 +19,7 @@ function Navbar() {
                     <Link to='shoping_card' >
                         < BsFillBagFill className=' fs-3' />
                         <span className='shopping_total fs-6'>{TotalQuantity}</span>
+                      
                     </Link>
                 </div>
             </div>

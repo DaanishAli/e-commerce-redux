@@ -36,13 +36,7 @@ const dispatch=useDispatch()
             </div>
 
             <div className='row product-count'>
-              {/* <div className='col-1 text-center border border-dark'
-                onClick={() => QTY > 1 ? setQTY(QTY - 1)& setPrice(product.price * (QTY-1)) &  setDiscountPrice(product.discountPrice * (QTY-1)) : ""}
-              ><GrSubtract /></div>
-              <div className='col-1 text-center border border-dark fs-4' >{QTY}</div>
-              <div className='col-1 text-center border border-dark '
-                onClick={() => QTY >= 0 ? setQTY(QTY + 1) & setPrice(product.price * (QTY+1)) &  setDiscountPrice(product.discountPrice * (QTY+1)): ""}
-              ><BsPlusLg /></div> */}
+           
               <Link to="/shoping_card"  className='col-12 border border-dark ms-3 text-center bg-danger '
               onClick={()=>dispatch({type:"ADD-TO-CART",payload:{product}})}>ADD TO CART</Link>
             </div>
